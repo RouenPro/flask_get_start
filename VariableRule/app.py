@@ -9,11 +9,10 @@ def user_name(username):
 
 @app.route('/userid/<int:userid>')
 def user_id(userid):
-    return 'This is userid %s' %userid
+    return 'This is userid %d' %userid
 
 
 @app.route('/userpath/<path:userpath>')
 def user_path(userpath):
     return 'This is userpath %s' %escape(userpath)
-
 
